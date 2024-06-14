@@ -1,0 +1,229 @@
+header {
+    width: 100%;
+}
+body {
+    background-color:#fcf8f4;
+    line-height: 1.5;
+}
+main {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 30px;
+}
+h1 {
+    font-size: 5vw;
+    background-color: #ddf0e0;
+    color:#2c6149;
+}
+#welcome {
+    display:block;
+    width: 100%;
+    margin: 50px 0 5px 0;
+    font-size: 12vw;
+	text-align: center;
+	color: #fcf8f4;
+	background: #2c6149;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    text-shadow: 5px 5px 0px #b3dac5, 
+                10px 10px 0px #8ec6a9, 
+                15px 15px 0px #7cb397, 
+                20px 20px 0px #53896f;
+}
+[role=doc-subtitle] {
+    text-align: center;
+    font-size: 4vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#fcf8f4;
+    background-color: #2c6149;
+    margin: 0;
+    padding: 0;
+}
+#homeimage {
+    display:block;
+    width: 10%;
+    border-radius: 95%;
+    margin: auto;
+    transition-property: width, border-radius;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+
+}
+#homeimage:hover {
+    border-radius: 20%;
+    width: 15%
+}
+.grid img {
+    width: 100%;
+    border-radius: 20%;
+}
+.gridh1 {
+    grid-area: h1;
+}
+.gridp1 {
+    grid-area: p1;
+}
+.gridp2 {
+    grid-area: p2;
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+}
+.gridp3 {
+    grid-area: p3;
+}
+.gridp4 {
+    grid-area: p4;
+}
+.gridfig1 {
+    grid-area: f1;
+}
+.gridfig2 {
+    grid-area: f2;
+}
+.gridfig3 {
+    grid-area: f3;
+}
+.gridh2one {
+    grid-area: h21;
+    font-size: 5vw;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+}
+.gridh2two {
+    grid-area: h22;
+    font-size: 5vw;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+}
+.gridh2three {
+    grid-area: h23;
+    font-size: 5vw;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+}
+.grid {
+    display:grid;
+    grid-template-areas:
+    'h1 h1 h1 h1 h1 h1 h1 h1' 
+    'p1 p1 p1 p1 p1 p1 p1 p1'
+    'f1 f1 f1 f1 h21 h21 h21 h21'
+    'f1 f1 f1 f1 p2 p2 p2 p2'
+    'h22 h22 h22 h22 f2 f2 f2 f2'
+    'p3 p3 p3 p3 f2 f2 f2 f2'
+    'f3 f3 f3 f3 h23 h23 h23 h23'
+    'f3 f3 f3 f3 p4 p4 p4 p4';
+}
+figcaption {
+    font-size: small;
+    font-style: italic;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.flex img {
+    width: 15%;
+    padding: 15px;
+    margin: 5px 10px;
+    border-radius: 80%;
+    border: dotted 5px #ff89c8;
+    background-color:#ddf0e0;
+    opacity: 70%;
+    transition-property: width, opacity;
+    transition-duration: 3s;
+    transition-delay: 1s;
+}
+.flex img:nth-child(even) {
+    border: dashed 5px #d05e9e;
+    border-radius: 25%;
+}
+.flex img:hover {
+    width: 20%;
+    opacity: 100%;
+}
+footer {
+    background-color: #ddf0e0;
+    font-size: 1vw;
+    margin: 25px auto;
+    padding: 5px 10px;
+    text-align: center;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+footer a {
+    color: #2c6149;
+    text-decoration: none;
+}
+footer a:hover {
+    font-weight: bolder;
+    font-size: larger;
+}
+nav {
+    display: block;
+    background-color: #53896f;
+    overflow:hidden;
+    position: fixed;
+    z-index: 50;
+    padding: 10px 0 10px 0;
+    top: 0;
+    left:0;
+    width:100%;
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5vw;  
+}
+.current a {
+    color: #2c6149;
+    background-color: #ddf0e0;
+}
+li {
+    display: inline;
+    list-style: none;
+}
+li a {
+    display:block;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    color:#fcf8f4;
+    padding: 0 5%;
+    transition-property: position, color, background-color;
+    transition-delay: .5s;
+    transition-duration: 3s;
+}
+li a:hover {
+    position: relative;
+    color:#2c6149;
+    background-color: #ddf0e0;
+}
+.skiplink {
+    background: #fcf8f4;
+    color: #2c6149;
+    border: solid #fcf8f4 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    height: 30px;
+    right: 0;
+    padding: 4px;
+    position: fixed;
+    float: right;
+    align-content: center;
+    top: -100px;
+    z-index:99;
+}
+.skiplink:focus {
+    top:0;
+}
